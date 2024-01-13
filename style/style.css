@@ -206,19 +206,20 @@ main {
 }
 
 /* footer style */
-.footer{
+footer{
+    background: #FFF4E7;
     margin-top: 130px;
-    background-color: #FFF4E7;
-    border-radius: 8px;
+}
+.footer{
+    color: #424242;
+    padding: 38px 400px 38px 400px;
+}
+.footer p{
+    font-weight: 400;
+    font-size: 20px;
     text-align: center;
 }
 
-.footer p {
-    padding: 38px 410px 38px 410px;
-    color: #424242;
-    font-size: 20px;
-    font-weight: 400;
-}
 
 
 /* responsive  styles*/
@@ -294,5 +295,9 @@ main {
 
     .facts-card-container {
         gap: 20px;
+    }
+    .footer{
+        padding: 20px;
+        width: 100%;
     }
 }
