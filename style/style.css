@@ -108,10 +108,58 @@ main {
     color: #FF900E;
 }
 
+/* feature section styles*/
+.features {
+    display: flex;
+    margin-top: 130px;
+    gap: 120px;
+}
+
+.features .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-content .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-img img {
+    height: 80%;
+    margin-left: 90px;
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-years-badge h2 {
+    color: #FFF;
+    font-size: 65px;
+    margin: 0;
+}
+
+.ten-years-badge p {
+    color: #FFF;
+    font-size: 25px;
+}
+
 /* facts section */
-.facts{
+.facts {
     margin-top: 168px;
 }
+
 .facts-card-container {
     margin-top: 100px;
     display: flex;
@@ -140,19 +188,36 @@ main {
 
 /* Sponsors style */
 
-.sponsors-image-container{
+.sponsors-image-container {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 40px;
 }
-.sponsors{
+
+.sponsors {
     text-align: center;
     margin-top: 180px;
 }
+
 .sponsors-image-container img {
     width: 165px;
+}
+
+/* footer style */
+.footer{
+    margin-top: 130px;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.footer p {
+    padding: 38px 410px 38px 410px;
+    color: #424242;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 
@@ -168,11 +233,23 @@ main {
 
     nav,
     .teams-container,
-    .facts-card-container ,
+    .features,
+    .facts-card-container,
     .sponsors-image-container {
         flex-direction: column;
     }
-    .facts-card-container{
+
+    .feature-img img {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .ten-years-badge {
+        position: static;
+        max-width: 300px;
+    }
+
+    .facts-card-container {
         gap: 20px;
     }
 
@@ -185,6 +262,11 @@ main {
         padding-right: 20px;
     }
 
+    .footer{
+        padding: 20px;
+        width: 100%;
+    }
+
 }
 
 /* tablet or medium devices */
@@ -195,14 +277,22 @@ main {
 
     nav,
     .teams-container,
+    .features,
     .sponsors-image-container {
         flex-direction: column;
     }
+
+    .feature-img img {
+        margin-left: 0;
+        width: 90%;
+    }
+
     .facts,
     .facts-card-container {
         padding: 50px;
     }
-    .facts-card-container{
+
+    .facts-card-container {
         gap: 20px;
     }
 }
